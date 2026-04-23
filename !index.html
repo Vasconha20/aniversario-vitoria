@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Feliz Aniversário Vitória 🎉</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .container {
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+        color: #ff4d6d;
+    }
+
+    button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        background-color: #ff4d6d;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+
+    button:hover {
+        background-color: #e63956;
+    }
+
+    #mensagem {
+        margin-top: 20px;
+        font-size: 18px;
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>🎂 Feliz Aniversário, Vitória! 🎂</h1>
+    <p>Hoje é seu dia... oficialmente permitido comer bolo sem culpa 😌</p>
+
+    <button onclick="mostrarMensagem()">Clique para surpresa</button>
+
+    <p id="mensagem">
+        Parabéns, Vitória! 🎉<br><br>
+        Você sobreviveu mais um ano fazendo cu doce 😆<br><br>
+        Que seu dia seja cheio de drogas (brincadeira... ou não 😂)<br><br>
+        Que seu dia seja cheio de comida, risadas e zero responsabilidades 🙏<br><br>
+        E relaxa... a idade é só um número.<br>
+        (No seu caso, um número meio alto já, mas tudo bem 😂)
+    </p>
+</div>
+
+<audio id="musica" src="musica.mp3"></audio>
+
+<script>
+function mostrarMensagem() {
+    document.getElementById("mensagem").style.display = "block";
+    document.getElementById("musica").play();
+}
+</script>
+
+</body>
+</html>
